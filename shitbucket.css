@@ -1,0 +1,14 @@
+.newLogoText {
+    color: white;
+    font-size: 20px;
+}
+
+.newLogoImage {
+    width: 20px;
+    height: 20px;
+}
+
+[data-testid="product-home-container"] {
+    text-decoration: none !important;
+}
+
