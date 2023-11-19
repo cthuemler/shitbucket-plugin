@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
 const iconsPath = browser.runtime.getURL("icons/new-logo.svg");
 
 let link = document.querySelector("link[rel~='icon']");
