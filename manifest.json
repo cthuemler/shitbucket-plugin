@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Shitbucket",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "This plugin does absolutely nothing except turn the Bitbucket logo into a shitbucket.",
   "icons": {
-    "48": "icons/new-logo.svg"
+    "48": "icons/new-logo.png"
   },
   "content_scripts": [
     {
@@ -15,7 +15,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["icons/new-logo.svg"],
+      "resources": ["icons/new-logo.png"],
       "matches": ["*://*.bitbucket.org/*"]
     }
   ]
