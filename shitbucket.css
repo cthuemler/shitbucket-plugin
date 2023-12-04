@@ -1,6 +1,13 @@
 .newLogoText {
-    color: white;
     font-size: 20px;
+}
+
+.regular-text-color {
+    color: #253858;
+}
+
+.rainbow-text-color {
+    color: white;
 }
 
 .newLogoImage {

@@ -24,8 +24,13 @@ const callback = (mutationList, observer) => {
         }
     }
     if (shouldUpdate) {
-        const logo = document.querySelector("[data-testid='product-home-logo'] > div");
-        logo.innerHTML = `<img src='${iconsPath}' class='newLogoImage' /></i><span class='newLogoText'>Shitbucket</span>`
+        let logo = document.querySelector("[data-testid='product-home-logo'] > span");
+        let textColorClass = 'regular-text-color'
+        if (!logo) { // Rainbow button has different content
+            logo = document.querySelector("[data-testid='product-home-logo'] > div");
+            textColorClass = 'rainbow-text-color'
+        }
+        logo.innerHTML = `<img src='${iconsPath}' class='newLogoImage' /></i><span class='newLogoText ${textColorClass}'>Shitbucket</span>`
     }
 };
 
